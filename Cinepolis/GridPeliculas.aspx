@@ -16,7 +16,6 @@
              <h1>PRUEBA GIT DOS</h1>
             <a href="content/img/iron_man4 port.jpg">content</a>
              <h1>PRUEBA GIT TRES</h1>
->>>>>>> origin/master
             <a href="content/img/iron_man4 port.jpg">content</a>
         </div>
     </div>
