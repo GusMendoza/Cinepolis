@@ -6,20 +6,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
     <div class="row">
-        <div class="col-xs-6">   
-            <h1>PRUEBA Uno</h1>
-            <a href="content/img/civil-war.jpg">content</a>
-            <h1>PRUEBA Dos</h1>
-            <a href="content/img/xmen.jpg">content</a>
-            <h1>PRUEBA Tres</h1>
-            <a href="content/img/iron_man4 port.jpg">content</a>
-             <h1>PRUEBA GIT DOS</h1>
-            <a href="content/img/iron_man4 port.jpg">content</a>
-             <h1>PRUEBA GIT TRES</h1>
-            <a href="content/img/iron_man4 port.jpg">content</a>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-xs-12" style="overflow: scroll; width:100%; height:500px">
             <asp:GridView runat="server" ID="gvPeliculas" CssClass="table table-responsive table-hover" AutoGenerateColumns="False" ShowFooter="True" OnRowCancelingEdit="gvPeliculas_RowCancelingEdit" OnRowDeleting="gvPeliculas_RowDeleting" OnRowEditing="gvPeliculas_RowEditing" OnRowUpdating="gvPeliculas_RowUpdating" DataKeyNames="id,clasificacionId,generoId,anio,fotomini,fotoport,video" PageSize="3" AllowPaging="True" AllowSorting="True" OnPageIndexChanging="gvPeliculas_PageIndexChanging" OnSorting="gvPeliculas_Sorting">
                 <Columns>
@@ -181,11 +167,6 @@
                 </Columns>
             </asp:GridView>
         </div>
-    </div>
-    <div class="row">
-    	<div class="col-xs-12">
-        <h1>Hola Git Hub</h1>
-    	</div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphScrips" runat="Server">
