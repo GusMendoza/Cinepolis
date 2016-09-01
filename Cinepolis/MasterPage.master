@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+            .form-signin .form-signin-heading, .form-signin .checkbox {
+                margin-bottom: 10px;
+            }
+
+            .form-signin .checkbox {
+                font-weight: normal;
+            }
+
+            .form-signin .form-control {
+                position: relative;
+                font-size: 16px;
+                height: auto;
+                padding: 10px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+                .form-signin .form-control:focus {
+                    z-index: 2;
+                }
+
+            .form-signin input[type="text"] {
+                margin-bottom: -1px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .form-signin input[type="password"] {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+        .account-wall {
+            margin-top: 0px;
+            padding: 0px 0px 20px 0px;
+            background-color: #f7f7f7;
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-title {
+            color: #555;
+            font-size: 18px;
+            font-weight: 400;
+            display: block;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 10px;
+            display: block;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .need-help {
+            margin-top: 10px;
+        }
+
+        .new-account {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Cinepol.aspx">
+                            <img src="content/img/Cinepolis.png" alt="Alternate Text" width="70px" />
+                        </a>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="Altas.aspx">Altas <span class="sr-only">(current)</span></a></li>
+                            <li><a href="GridPeliculas.aspx">Admin <span class="sr-only">(current)</span></a></li>
+                            <%-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>--%>
+                        </ul>
+                        <!-- Inicion de sesion con un modal -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <asp:Label Text="" ID="lblUsuario" runat="server" /><br />
+                            <a id="lblModal" runat="server" href="#" data-toggle="modal" data-target="#myModal">Login</a>&nbsp;&nbsp<asp:LinkButton Text="Salir" runat="server" ID="lnkSalir" OnClick="lnkSalir_Click" />
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer class="panel-footer text-center">
+                <h6 style="margin: auto">Cinepolis VIP; La capital del cine</h6>
+            </footer>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Iniciar Sesión</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="account-wall">
+                            <img class="center-block" src="content/img/Cinepolis.png" alt="" />
+                            <br />
+                            <div class="form-signin">
+                                <asp:TextBox runat="server" ID="txtMail" type="email" class="form-control" placeholder="Email" required="" autofocus="">
+                                </asp:TextBox>                                
+                                <br />
+                                <asp:TextBox runat="server" ID="txtPassword" type="password" class="form-control" placeholder="Password" required="">
+                                </asp:TextBox>
+                                <asp:Button ID="btnEntrar" Text="Entrar" runat="server" class="btn btn-lg btn-primary btn-block" OnClick="btnEntrar_Click" />                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="cphScrips" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

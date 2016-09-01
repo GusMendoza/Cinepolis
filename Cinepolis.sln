@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Cinepolis", "http://localhost:2225", "{7DBA4F51-3AF3-4EBF-9F33-7C009D016A17}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{0ff6f663-b693-40f2-bc4b-994bd8746e59}|BusCinepolis.dll;{058F18D3-8333-4DEC-98A8-53303074A938}|DatCinepolis.dll;{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55}|EntCinepolis.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2225"
+		Debug.AspNetCompiler.PhysicalPath = "Cinepolis\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2225\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2225"
+		Release.AspNetCompiler.PhysicalPath = "Cinepolis\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2225\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Cinepolis\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.-UI", "1.-UI", "{CCA6C70C-55A3-43EB-B223-AE1C1F5CF7AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.-Business", "2.-Business", "{7254D2FE-0A87-4666-A894-450B3275E47B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.-Data", "3.-Data", "{CB1A73D6-FE59-44CE-9197-1168303360C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatCinepolis", "DatCinepolis\DatCinepolis.csproj", "{058F18D3-8333-4DEC-98A8-53303074A938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntCinepolis", "EntCinepolis\EntCinepolis.csproj", "{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusCinepolis", "BusCinepolis\BusCinepolis.csproj", "{0FF6F663-B693-40F2-BC4B-994BD8746E59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DBA4F51-3AF3-4EBF-9F33-7C009D016A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBA4F51-3AF3-4EBF-9F33-7C009D016A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBA4F51-3AF3-4EBF-9F33-7C009D016A17}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBA4F51-3AF3-4EBF-9F33-7C009D016A17}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{058F18D3-8333-4DEC-98A8-53303074A938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058F18D3-8333-4DEC-98A8-53303074A938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058F18D3-8333-4DEC-98A8-53303074A938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058F18D3-8333-4DEC-98A8-53303074A938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF6F663-B693-40F2-BC4B-994BD8746E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF6F663-B693-40F2-BC4B-994BD8746E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF6F663-B693-40F2-BC4B-994BD8746E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF6F663-B693-40F2-BC4B-994BD8746E59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DBA4F51-3AF3-4EBF-9F33-7C009D016A17} = {CCA6C70C-55A3-43EB-B223-AE1C1F5CF7AF}
+		{058F18D3-8333-4DEC-98A8-53303074A938} = {CB1A73D6-FE59-44CE-9197-1168303360C2}
+		{C79D8D8B-D9C4-4111-A0D1-AEA13FCEEF55} = {7254D2FE-0A87-4666-A894-450B3275E47B}
+		{0FF6F663-B693-40F2-BC4B-994BD8746E59} = {7254D2FE-0A87-4666-A894-450B3275E47B}
+	EndGlobalSection
+EndGlobal
