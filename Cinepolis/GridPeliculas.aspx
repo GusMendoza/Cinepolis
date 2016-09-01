@@ -13,9 +13,9 @@
             <a href="content/img/xmen.jpg">content</a>
             <h1>PRUEBA Tres</h1>
             <a href="content/img/iron_man4 port.jpg">content</a>
-             <h1>PRUEBA GIB DOS</h1>
+             <h1>PRUEBA GUS DOS</h1>
             <a href="content/img/iron_man4 port.jpg">content</a>
-             <h1>PRUEBA GIB TRES</h1>
+             <h1>PRUEBA GUS TRES</h1>
             <a href="content/img/iron_man4 port.jpg">content</a>
         </div>
     </div>
