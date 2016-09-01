@@ -7,7 +7,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="Server">
     <div class="row">
         <div class="col-xs-6">   
-            <h1>PRUEBA GIB</h1>
+            <h1>PRUEBA Uno</h1>
+            <a href="content/img/civil-war.jpg">content</a>
+            <h1>PRUEBA Dos</h1>
+            <a href="content/img/xmen.jpg">content</a>
+            <h1>PRUEBA Tres</h1>
             <a href="content/img/iron_man4 port.jpg">content</a>
         </div>
     </div>
