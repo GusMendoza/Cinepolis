@@ -168,7 +168,11 @@
             </asp:GridView>
         </div>
     </div>
-
+    <div class="row">
+    	<div class="col-xs-12">
+        <h1>Hola Git Hub</h1>
+    	</div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphScrips" runat="Server">
     <script src="js/moment-with-locales.js"></script>
